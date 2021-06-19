@@ -749,7 +749,7 @@ PART
 	part = mk3CrewCabin.wreck_4294161856
 	partName = Part
 	persistentId = 2892678107
-	pos = 0,10,-3.12500477
+	pos = 0,10,-3.12500572
 	attPos = 0,0,0
 	attPos0 = 0,-3.12500048,4.76837158E-07
 	rot = 0.707106829,0,0,0.707106829
@@ -795,24 +795,6 @@ PART
 	}
 	PARTDATA
 	{
-	}
-	MODULE
-	{
-		name = ModuleInventoryPart
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		STOREDPARTS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
 	}
 	MODULE
 	{
