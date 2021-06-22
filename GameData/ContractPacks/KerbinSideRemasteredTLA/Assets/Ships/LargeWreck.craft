@@ -1,10 +1,10 @@
-ship = Large Wreck
+ship = LargeWreck
 version = 1.11.2
-description = Used in KSRTLA Salvage and rescue misssions
+description = Vessel used in KSRTLA Salvage/Rescuemissions
 type = SPH
-size = 3.24759984,3.78732681,8.21250725
+size = 3.24759984,3.78732681,8.21250343
 steamPublishedFileId = 0
-persistentId = 3620432645
+persistentId = 4141664941
 rot = 0,0,0,0
 missionFlag = Squad/Flags/default
 vesselType = Debris
@@ -14,9 +14,9 @@ OverrideAxisControl = 0,0,0,0
 OverrideGroupNames = ,,,
 PART
 {
-	part = mk3Cockpit.Shuttle.wreck_4294188544
+	part = mk3Cockpit.Shuttle.wreck_4294162124
 	partName = Part
-	persistentId = 3637496087
+	persistentId = 2168405784
 	pos = 0,10,0
 	attPos = 0,0,0
 	attPos0 = 0,10,0
@@ -38,8 +38,8 @@ PART
 	modCost = 1660
 	modMass = 0.247999996
 	modSize = 0,0,0
-	link = mk3CrewCabin.wreck_4294161856
-	attN = bottom,mk3CrewCabin.wreck_4294161856_0|-1.25|0_0|-1|0_0|-1.25|0_0|-1|0
+	link = mk3CrewCabin.wreck_4294160218
+	attN = bottom,mk3CrewCabin.wreck_4294160218_0|-1.25|0_0|-1|0_0|-1.25|0_0|-1|0
 	attN = top,Null_0_0|3.1875|0.625_0|1|0_0|3.1875|0.625_0|1|0
 	EVENTS
 	{
@@ -89,10 +89,10 @@ PART
 				PART
 				{
 					name = TheBlackBox
-					cid = 4294050082
+					cid = 4294156938
 					uid = 0
 					mid = 0
-					persistentId = 2942245465
+					persistentId = 1243738921
 					launchID = 0
 					parent = 0
 					position = 0,0,0
@@ -117,7 +117,7 @@ PART
 					expt = 0.5
 					state = 0
 					PreFailState = 0
-					attached = False
+					attached = True
 					autostrutMode = Off
 					rigidAttachment = False
 					flag = 
@@ -281,7 +281,7 @@ PART
 			PART
 			{
 				name = KIS.electricScrewdriver
-				cid = 4294660804
+				cid = 4294660280
 				uid = 0
 				mid = 0
 				persistentId = 0
@@ -355,7 +355,7 @@ PART
 			PART
 			{
 				name = KIS.evapropellant
-				cid = 4294660740
+				cid = 4294660216
 				uid = 0
 				mid = 0
 				persistentId = 0
@@ -456,7 +456,7 @@ PART
 			PART
 			{
 				name = KIS.evapropellant
-				cid = 4294660740
+				cid = 4294660216
 				uid = 0
 				mid = 0
 				persistentId = 0
@@ -557,7 +557,7 @@ PART
 			PART
 			{
 				name = KIS.evapropellant
-				cid = 4294660740
+				cid = 4294660216
 				uid = 0
 				mid = 0
 				persistentId = 0
@@ -658,7 +658,7 @@ PART
 			PART
 			{
 				name = KIS.evapropellant
-				cid = 4294660740
+				cid = 4294660216
 				uid = 0
 				mid = 0
 				persistentId = 0
@@ -746,10 +746,10 @@ PART
 }
 PART
 {
-	part = mk3CrewCabin.wreck_4294161856
+	part = mk3CrewCabin.wreck_4294160218
 	partName = Part
-	persistentId = 2892678107
-	pos = 0,10,-3.12500572
+	persistentId = 3887767540
+	pos = 0,10,-3.12500095
 	attPos = 0,0,0
 	attPos0 = 0,-3.12500048,4.76837158E-07
 	rot = 0.707106829,0,0,0.707106829
@@ -770,7 +770,7 @@ PART
 	modCost = 4650
 	modMass = 0.963999987
 	modSize = 0,0,0
-	attN = top,mk3Cockpit.Shuttle.wreck_4294188544_0|1.875|0_0|1|0_0|1.875|0_0|1|0
+	attN = top,mk3Cockpit.Shuttle.wreck_4294162124_0|1.875|0_0|1|0_0|1.875|0_0|1|0
 	attN = bottom,Null_0_0|-1.875|0_0|-1|0_0|-1.875|0_0|-1|0
 	EVENTS
 	{
@@ -872,7 +872,7 @@ PART
 			PART
 			{
 				name = KIS.electricScrewdriver
-				cid = 4294660804
+				cid = 4294660280
 				uid = 0
 				mid = 0
 				persistentId = 0
@@ -946,7 +946,7 @@ PART
 			PART
 			{
 				name = KIS.evapropellant
-				cid = 4294660740
+				cid = 4294660216
 				uid = 0
 				mid = 0
 				persistentId = 0
@@ -1047,7 +1047,7 @@ PART
 			PART
 			{
 				name = KIS.evapropellant
-				cid = 4294660740
+				cid = 4294660216
 				uid = 0
 				mid = 0
 				persistentId = 0
@@ -1148,7 +1148,7 @@ PART
 			PART
 			{
 				name = KIS.evapropellant
-				cid = 4294660740
+				cid = 4294660216
 				uid = 0
 				mid = 0
 				persistentId = 0
@@ -1249,7 +1249,7 @@ PART
 			PART
 			{
 				name = KIS.evapropellant
-				cid = 4294660740
+				cid = 4294660216
 				uid = 0
 				mid = 0
 				persistentId = 0
@@ -1350,7 +1350,7 @@ PART
 			PART
 			{
 				name = KIS.evapropellant
-				cid = 4294660740
+				cid = 4294660216
 				uid = 0
 				mid = 0
 				persistentId = 0
@@ -1451,7 +1451,7 @@ PART
 			PART
 			{
 				name = KIS.evapropellant
-				cid = 4294660740
+				cid = 4294660216
 				uid = 0
 				mid = 0
 				persistentId = 0
@@ -1552,7 +1552,7 @@ PART
 			PART
 			{
 				name = KIS.evapropellant
-				cid = 4294660740
+				cid = 4294660216
 				uid = 0
 				mid = 0
 				persistentId = 0
@@ -1653,7 +1653,7 @@ PART
 			PART
 			{
 				name = KIS.evapropellant
-				cid = 4294660740
+				cid = 4294660216
 				uid = 0
 				mid = 0
 				persistentId = 0
@@ -1754,7 +1754,7 @@ PART
 			PART
 			{
 				name = KIS.evapropellant
-				cid = 4294660740
+				cid = 4294660216
 				uid = 0
 				mid = 0
 				persistentId = 0
@@ -1855,7 +1855,7 @@ PART
 			PART
 			{
 				name = KIS.evapropellant
-				cid = 4294660740
+				cid = 4294660216
 				uid = 0
 				mid = 0
 				persistentId = 0
@@ -1956,7 +1956,7 @@ PART
 			PART
 			{
 				name = KIS.evapropellant
-				cid = 4294660740
+				cid = 4294660216
 				uid = 0
 				mid = 0
 				persistentId = 0
@@ -2057,7 +2057,7 @@ PART
 			PART
 			{
 				name = KIS.evapropellant
-				cid = 4294660740
+				cid = 4294660216
 				uid = 0
 				mid = 0
 				persistentId = 0
@@ -2158,7 +2158,7 @@ PART
 			PART
 			{
 				name = KIS.evapropellant
-				cid = 4294660740
+				cid = 4294660216
 				uid = 0
 				mid = 0
 				persistentId = 0
@@ -2259,7 +2259,7 @@ PART
 			PART
 			{
 				name = KIS.evapropellant
-				cid = 4294660740
+				cid = 4294660216
 				uid = 0
 				mid = 0
 				persistentId = 0
@@ -2360,7 +2360,7 @@ PART
 			PART
 			{
 				name = KIS.evapropellant
-				cid = 4294660740
+				cid = 4294660216
 				uid = 0
 				mid = 0
 				persistentId = 0
@@ -2461,7 +2461,7 @@ PART
 			PART
 			{
 				name = KIS.evapropellant
-				cid = 4294660740
+				cid = 4294660216
 				uid = 0
 				mid = 0
 				persistentId = 0
