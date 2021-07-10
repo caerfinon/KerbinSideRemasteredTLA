@@ -1,11 +1,17 @@
 # KerbinSideRemasteredTLA
-# version 0.0.2-ALPHA
+# version 1.0.0
 The Life Aquatic - Contracts Pack for underwater and ocean surface missions
+
+
+- Exploration of underwater anomalies
+- Deep sea salvage, recovery and rescue.
+- Coastal patrol missions
+- Rescue disabled ships at sea
+
 
 Requires
 - Requires: Contract Configurator
 - Requires: Kerbal Konstructs
-- Requires: Omega's Stockalike Structures: No Textures Required
 - Requires: Kerbin Side Remastered
 - Requires: Kerbin Side Remastered Gap Extras
 - Requires: KSC Harbor
