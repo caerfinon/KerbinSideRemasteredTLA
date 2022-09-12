@@ -1,5 +1,5 @@
 # KerbinSideRemasteredTLA
-# version 1.0.6
+# version 1.0.7
 The Life Aquatic - Contracts Pack for underwater and ocean surface missions
 
 Requires
