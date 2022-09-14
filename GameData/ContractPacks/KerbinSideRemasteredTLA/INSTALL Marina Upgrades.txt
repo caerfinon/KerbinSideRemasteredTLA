@@ -1,0 +1,23 @@
+The Marina upgrades for the Water Lanched Sites will install automatically if You install the Kerbin Side Core mod from CKAN. 
+
+Features
+--------- 
+- Marina docks for small ships
+- A boat launch ramp
+- A small light house
+   
+Additions upgrades
+------------------ 
+If you rename or delete the following 2 files in GameData\KerbalKonstructs-WaterLaunchSites\Statics
+
+- BillBoard-Welcome-instances.cfg
+- Marinas-instances.cfg 
+	 
+and remove the ".rename" extension from these 2 files in GameData\ContractPacks\KerbinSideRemasteredTLA\Assets\Kerbal-Konstructs\Statics\KSC Marina
+
+- BillBoard-WelcomeUpgrade-instances.cfg.rename
+- ksidepierlong-instances.cfg.rename
+	 
+then the upgraded piers will be in use. 
+
+
