@@ -1,5 +1,5 @@
 # KerbinSideRemasteredTLA
-# version 1.0.6
+# version 1.1.0
 The Life Aquatic - Contracts Pack for underwater and ocean surface missions
 
 
@@ -8,6 +8,8 @@ The Life Aquatic - Contracts Pack for underwater and ocean surface missions
 - Coastal patrol missions
 - Rescue disabled ships at sea
 
+- Use of KK Marina Upgrades requires the install of the Kerbin Side Core mod on CKAN
+     - See additional instructions in the file "INSTALL Marina Upgrades.txt"
 
 Requires
 - Requires: Contract Configurator
