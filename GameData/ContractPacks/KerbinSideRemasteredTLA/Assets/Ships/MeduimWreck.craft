@@ -1,5 +1,5 @@
 ship = meduimwreck
-version = 1.11.2
+version = 1.12.3
 description = 
 type = SPH
 size = 2.5,1.52885818,6.40682793
@@ -35,8 +35,8 @@ PART
 	sepI = -1
 	attm = 0
 	sameVesselCollision = False
-	modCost = 1160
-	modMass = 0.127999991
+	modCost = 10
+	modMass = 0.00400000019
 	modSize = 0,0,0
 	link = mk2CrewCabin.wreck_4293866770
 	attN = bottom,mk2CrewCabin.wreck_4293866770_0|-1.25|0_0|-1|0_0|-1.25|0_0|-1|0
@@ -70,6 +70,84 @@ PART
 		isEnabled = True
 		flagDisplayed = True
 		isMirrored = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePAWS
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCrewRandR
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = WBISuitSwitcher
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -223,7 +301,7 @@ PART
 	}
 	MODULE
 	{
-		name = ModulePAWS
+		name = KSPPartVolumeModule
 		isEnabled = True
 		stagingEnabled = True
 		EVENTS
@@ -282,165 +360,6 @@ PART
 		ACTIONS
 		{
 		}
-		ITEM
-		{
-			partName = KIS.electricScrewdriver
-			slot = 0
-			contentCost = 0
-			contentMass = 0
-			dryCost = 650
-			dryMass = 0.00400000018998981
-			equipped = False
-			quantity = 1
-			resourceCost = 0
-			resourceMass = 0
-			PART
-			{
-				name = KIS.electricScrewdriver
-				cid = 4294618116
-				uid = 0
-				mid = 0
-				persistentId = 0
-				launchID = 0
-				mirror = 1,1,1
-				symMethod = Radial
-				resPri = 0
-				sepI = 0
-				sameVesselCollision = False
-				mass = 0.00400000019
-				shielded = False
-				temp = -1
-				tempExt = 0
-				tempExtUnexp = 0
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 0
-				PreFailState = 0
-				autostrutMode = Off
-				rigidAttachment = False
-				rTrf = KIS.electricScrewdriver
-				modCost = 0
-				modMass = 0
-				moduleVariantName = 
-				moduleCargoStackableQuantity = 1
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleKISItemAttachTool
-					isEnabled = True
-					staticAttached = False
-					stagingEnabled = True
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModulePAWS
-					isEnabled = True
-					stagingEnabled = True
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModulePartInfo
-					isEnabled = True
-					stagingEnabled = True
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
-		}
-		ITEM
-		{
-			partName = KIS.evapropellant
-			slot = 1
-			contentCost = 0
-			contentMass = 0
-			dryCost = 250
-			dryMass = 0.00999999977648258
-			equipped = False
-			quantity = 1
-			resourceCost = 0
-			resourceMass = 0.0499999988824129
-			PART
-			{
-				name = KIS.evapropellant
-				cid = 4294618022
-				uid = 0
-				mid = 0
-				persistentId = 0
-				launchID = 0
-				mirror = 1,1,1
-				symMethod = Radial
-				resPri = 0
-				sepI = 0
-				sameVesselCollision = False
-				mass = 0.00999999978
-				shielded = False
-				temp = -1
-				tempExt = 0
-				tempExtUnexp = 0
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 0
-				PreFailState = 0
-				autostrutMode = Off
-				rigidAttachment = False
-				rTrf = KIS.evapropellant
-				modCost = 0
-				modMass = 0
-				moduleVariantName = 
-				moduleCargoStackableQuantity = 1
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleKISItemEvaPropellant
-					isEnabled = True
-					staticAttached = False
-					stagingEnabled = True
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModulePAWS
-					isEnabled = True
-					stagingEnabled = True
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModulePartInfo
-					isEnabled = True
-					stagingEnabled = True
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = EVA Propellant
-					amount = 10
-					maxAmount = 10
-					flowState = True
-					isTweakable = False
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
-		}
 		UPGRADESAPPLIED
 		{
 		}
@@ -456,91 +375,6 @@ PART
 		}
 		ACTIONS
 		{
-		}
-		ITEM
-		{
-			partName = KIS.evapropellant
-			slot = 0
-			contentCost = 0
-			contentMass = 0
-			dryCost = 250
-			dryMass = 0.00999999977648258
-			equipped = False
-			quantity = 1
-			resourceCost = 0
-			resourceMass = 0.0499999988824129
-			PART
-			{
-				name = KIS.evapropellant
-				cid = 4294618022
-				uid = 0
-				mid = 0
-				persistentId = 0
-				launchID = 0
-				mirror = 1,1,1
-				symMethod = Radial
-				resPri = 0
-				sepI = 0
-				sameVesselCollision = False
-				mass = 0.00999999978
-				shielded = False
-				temp = -1
-				tempExt = 0
-				tempExtUnexp = 0
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 0
-				PreFailState = 0
-				autostrutMode = Off
-				rigidAttachment = False
-				rTrf = KIS.evapropellant
-				modCost = 0
-				modMass = 0
-				moduleVariantName = 
-				moduleCargoStackableQuantity = 1
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleKISItemEvaPropellant
-					isEnabled = True
-					staticAttached = False
-					stagingEnabled = True
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModulePAWS
-					isEnabled = True
-					stagingEnabled = True
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModulePartInfo
-					isEnabled = True
-					stagingEnabled = True
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = EVA Propellant
-					amount = 10
-					maxAmount = 10
-					flowState = True
-					isTweakable = False
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -563,7 +397,7 @@ PART
 	part = mk2CrewCabin.wreck_4293866770
 	partName = Part
 	persistentId = 980712928
-	pos = 0,10,-2.18750048
+	pos = 0,10,-2.18750095
 	attPos = 0,0,0
 	attPos0 = 0,-2.18750024,2.38418579E-07
 	rot = 0.707106829,0,0,0.707106829
@@ -581,8 +415,8 @@ PART
 	sepI = -1
 	attm = 0
 	sameVesselCollision = False
-	modCost = 1650
-	modMass = 0.244000003
+	modCost = 0
+	modMass = 0
 	modSize = 0,0,0
 	attN = top,mk2Cockpit.Standard.wreck_4293870278_0|0.9375|0_0|1|0_0|0.9375|0_0|1|0
 	attN = bottom,Null_0_0|-0.9375|0_0|-1|0_0|-0.9375|0_0|-1|0
@@ -627,6 +461,84 @@ PART
 	}
 	MODULE
 	{
+		name = USI_ModuleRecycleablePart
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCrewRandR
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = WBISuitSwitcher
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = KSPPartVolumeModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModulePartInfo
 		isEnabled = True
 		stagingEnabled = True
@@ -671,164 +583,21 @@ PART
 		ACTIONS
 		{
 		}
-		ITEM
+		UPGRADESAPPLIED
 		{
-			partName = KIS.electricScrewdriver
-			slot = 0
-			contentCost = 0
-			contentMass = 0
-			dryCost = 650
-			dryMass = 0.00400000018998981
-			equipped = False
-			quantity = 1
-			resourceCost = 0
-			resourceMass = 0
-			PART
-			{
-				name = KIS.electricScrewdriver
-				cid = 4294618116
-				uid = 0
-				mid = 0
-				persistentId = 0
-				launchID = 0
-				mirror = 1,1,1
-				symMethod = Radial
-				resPri = 0
-				sepI = 0
-				sameVesselCollision = False
-				mass = 0.00400000019
-				shielded = False
-				temp = -1
-				tempExt = 0
-				tempExtUnexp = 0
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 0
-				PreFailState = 0
-				autostrutMode = Off
-				rigidAttachment = False
-				rTrf = KIS.electricScrewdriver
-				modCost = 0
-				modMass = 0
-				moduleVariantName = 
-				moduleCargoStackableQuantity = 1
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleKISItemAttachTool
-					isEnabled = True
-					staticAttached = False
-					stagingEnabled = True
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModulePAWS
-					isEnabled = True
-					stagingEnabled = True
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModulePartInfo
-					isEnabled = True
-					stagingEnabled = True
-					UPGRADESAPPLIED
-					{
-					}
-				}
-			}
 		}
-		ITEM
+	}
+	MODULE
+	{
+		name = ModuleKISInventory
+		isEnabled = True
+		invName = 
+		stagingEnabled = True
+		EVENTS
 		{
-			partName = KIS.evapropellant
-			slot = 1
-			contentCost = 0
-			contentMass = 0
-			dryCost = 250
-			dryMass = 0.00999999977648258
-			equipped = False
-			quantity = 1
-			resourceCost = 0
-			resourceMass = 0.0499999988824129
-			PART
-			{
-				name = KIS.evapropellant
-				cid = 4294618022
-				uid = 0
-				mid = 0
-				persistentId = 0
-				launchID = 0
-				mirror = 1,1,1
-				symMethod = Radial
-				resPri = 0
-				sepI = 0
-				sameVesselCollision = False
-				mass = 0.00999999978
-				shielded = False
-				temp = -1
-				tempExt = 0
-				tempExtUnexp = 0
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 0
-				PreFailState = 0
-				autostrutMode = Off
-				rigidAttachment = False
-				rTrf = KIS.evapropellant
-				modCost = 0
-				modMass = 0
-				moduleVariantName = 
-				moduleCargoStackableQuantity = 1
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleKISItemEvaPropellant
-					isEnabled = True
-					staticAttached = False
-					stagingEnabled = True
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModulePAWS
-					isEnabled = True
-					stagingEnabled = True
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModulePartInfo
-					isEnabled = True
-					stagingEnabled = True
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = EVA Propellant
-					amount = 10
-					maxAmount = 10
-					flowState = True
-					isTweakable = False
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
+		}
+		ACTIONS
+		{
 		}
 		UPGRADESAPPLIED
 		{
@@ -846,91 +615,6 @@ PART
 		ACTIONS
 		{
 		}
-		ITEM
-		{
-			partName = KIS.evapropellant
-			slot = 0
-			contentCost = 0
-			contentMass = 0
-			dryCost = 250
-			dryMass = 0.00999999977648258
-			equipped = False
-			quantity = 1
-			resourceCost = 0
-			resourceMass = 0.0499999988824129
-			PART
-			{
-				name = KIS.evapropellant
-				cid = 4294618022
-				uid = 0
-				mid = 0
-				persistentId = 0
-				launchID = 0
-				mirror = 1,1,1
-				symMethod = Radial
-				resPri = 0
-				sepI = 0
-				sameVesselCollision = False
-				mass = 0.00999999978
-				shielded = False
-				temp = -1
-				tempExt = 0
-				tempExtUnexp = 0
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 0
-				PreFailState = 0
-				autostrutMode = Off
-				rigidAttachment = False
-				rTrf = KIS.evapropellant
-				modCost = 0
-				modMass = 0
-				moduleVariantName = 
-				moduleCargoStackableQuantity = 1
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleKISItemEvaPropellant
-					isEnabled = True
-					staticAttached = False
-					stagingEnabled = True
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModulePAWS
-					isEnabled = True
-					stagingEnabled = True
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModulePartInfo
-					isEnabled = True
-					stagingEnabled = True
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = EVA Propellant
-					amount = 10
-					maxAmount = 10
-					flowState = True
-					isTweakable = False
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
-		}
 		UPGRADESAPPLIED
 		{
 		}
@@ -946,192 +630,6 @@ PART
 		}
 		ACTIONS
 		{
-		}
-		ITEM
-		{
-			partName = KIS.evapropellant
-			slot = 0
-			contentCost = 0
-			contentMass = 0
-			dryCost = 250
-			dryMass = 0.00999999977648258
-			equipped = False
-			quantity = 1
-			resourceCost = 0
-			resourceMass = 0.0499999988824129
-			PART
-			{
-				name = KIS.evapropellant
-				cid = 4294618022
-				uid = 0
-				mid = 0
-				persistentId = 0
-				launchID = 0
-				mirror = 1,1,1
-				symMethod = Radial
-				resPri = 0
-				sepI = 0
-				sameVesselCollision = False
-				mass = 0.00999999978
-				shielded = False
-				temp = -1
-				tempExt = 0
-				tempExtUnexp = 0
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 0
-				PreFailState = 0
-				autostrutMode = Off
-				rigidAttachment = False
-				rTrf = KIS.evapropellant
-				modCost = 0
-				modMass = 0
-				moduleVariantName = 
-				moduleCargoStackableQuantity = 1
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleKISItemEvaPropellant
-					isEnabled = True
-					staticAttached = False
-					stagingEnabled = True
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModulePAWS
-					isEnabled = True
-					stagingEnabled = True
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModulePartInfo
-					isEnabled = True
-					stagingEnabled = True
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = EVA Propellant
-					amount = 10
-					maxAmount = 10
-					flowState = True
-					isTweakable = False
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleKISInventory
-		isEnabled = True
-		invName = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ITEM
-		{
-			partName = KIS.evapropellant
-			slot = 0
-			contentCost = 0
-			contentMass = 0
-			dryCost = 250
-			dryMass = 0.00999999977648258
-			equipped = False
-			quantity = 1
-			resourceCost = 0
-			resourceMass = 0.0499999988824129
-			PART
-			{
-				name = KIS.evapropellant
-				cid = 4294618022
-				uid = 0
-				mid = 0
-				persistentId = 0
-				launchID = 0
-				mirror = 1,1,1
-				symMethod = Radial
-				resPri = 0
-				sepI = 0
-				sameVesselCollision = False
-				mass = 0.00999999978
-				shielded = False
-				temp = -1
-				tempExt = 0
-				tempExtUnexp = 0
-				staticPressureAtm = 0
-				expt = 0.5
-				state = 0
-				PreFailState = 0
-				autostrutMode = Off
-				rigidAttachment = False
-				rTrf = KIS.evapropellant
-				modCost = 0
-				modMass = 0
-				moduleVariantName = 
-				moduleCargoStackableQuantity = 1
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleKISItemEvaPropellant
-					isEnabled = True
-					staticAttached = False
-					stagingEnabled = True
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModulePAWS
-					isEnabled = True
-					stagingEnabled = True
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModulePartInfo
-					isEnabled = True
-					stagingEnabled = True
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				RESOURCE
-				{
-					name = EVA Propellant
-					amount = 10
-					maxAmount = 10
-					flowState = True
-					isTweakable = False
-					hideFlow = False
-					isVisible = True
-					flowMode = Both
-				}
-			}
 		}
 		UPGRADESAPPLIED
 		{
