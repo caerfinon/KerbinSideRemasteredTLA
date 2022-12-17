@@ -1,8 +1,8 @@
 ship = LargeWreck
-version = 1.12.3
+version = 1.12.4
 description = Vessel used in KSRTLA Salvage/Rescuemissions
 type = SPH
-size = 3.24759984,3.78732681,8.21250343
+size = 3.24759984,3.78732681,8.21252823
 steamPublishedFileId = 0
 persistentId = 4141664941
 rot = 0,0,0,0
@@ -64,101 +64,6 @@ PART
 	}
 	PARTDATA
 	{
-	}
-	MODULE
-	{
-		name = FlagDecal
-		isEnabled = True
-		flagDisplayed = False
-		isMirrored = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModulePAWS
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCrewRandR
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = WBISuitSwitcher
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
 	}
 	MODULE
 	{
@@ -332,7 +237,24 @@ PART
 	}
 	MODULE
 	{
-		name = KSPPartVolumeModule
+		name = FlagDecal
+		isEnabled = True
+		flagDisplayed = False
+		isMirrored = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSuitSwitcher
 		isEnabled = True
 		stagingEnabled = True
 		EVENTS
@@ -446,7 +368,7 @@ PART
 	RESOURCE
 	{
 		name = IntakeLqd
-		amount = 36000
+		amount = 32609.998941421509
 		maxAmount = 36000
 		flowState = True
 		isTweakable = True
@@ -460,7 +382,7 @@ PART
 	part = mk3CrewCabin.wreck_4294160218
 	partName = Part
 	persistentId = 805250786
-	pos = 0,10,-3.12500286
+	pos = 0,10,-3.1250267
 	attPos = 0,0,0
 	attPos0 = 0,-3.12500048,4.76837158E-07
 	rot = 0.707106829,0,0,0.707106829
@@ -509,85 +431,7 @@ PART
 	}
 	MODULE
 	{
-		name = ModulePAWS
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = USI_ModuleRecycleablePart
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCrewRandR
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = WBISuitSwitcher
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = KSPPartVolumeModule
+		name = ModuleSuitSwitcher
 		isEnabled = True
 		stagingEnabled = True
 		EVENTS
@@ -629,22 +473,6 @@ PART
 		Log
 		{
 			flight = 0
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleKISInventory
-		isEnabled = True
-		invName = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
 		}
 		UPGRADESAPPLIED
 		{
@@ -975,10 +803,26 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleKISInventory
+		isEnabled = True
+		invName = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = IntakeLqd
-		amount = 47000
+		amount = 39779.999852180481
 		maxAmount = 47000
 		flowState = True
 		isTweakable = True
