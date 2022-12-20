@@ -21,9 +21,9 @@ Requires
 - Requires: CountryDoggo's Random KK Bits
 
 
-Reccomends:
-- Reccomends: Working Underwater Lite
-- Reccomends: SunkWorks Maritime Technologies [WIP] 
+Recommends:
+- Recommends: Working Underwater Lite
+- Recommends: SunkWorks Maritime Technologies [WIP] (Not on CKAN as yet)
 
 Suggests:
 
