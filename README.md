@@ -9,7 +9,7 @@ Requires
 - Requires: Kerbin Side Remastered Gap Extras
 - Requires: KSC Harbor
 - Requires: Water Launch Sites (Kerbal-Konstructs)
-- Requires: CountryDoggo's Random KK Bits
+- Requires: CountryDoggo's Random KK Bits ( available in v2.0.0 release as Extras.zip)
 
 
 Recommends:
