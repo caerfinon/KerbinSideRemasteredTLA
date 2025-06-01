@@ -4,7 +4,7 @@
     "name": "Kerbin Side Remastered - The Life Aquatic",
     "abstract": "The Life Aquatic - Contracts Pack for underwater and ocean surface missions",
     "author": "Caerfinon",
-    "version": "1:v2.0.1",
+    "version": "v2.0.1",
     "ksp_version": "1.12.5",
     "license": "MIT",
     "resources": {
@@ -16,7 +16,6 @@
     },
     "tags": [
         "config",
-        "career",
         "buildings"
     ],
     "depends": [
@@ -44,12 +43,12 @@
     "suggests": [
         {
             "name": "KSCHarbor"
-		},
-        {
-            "name": "KerbinSideRemasteredGAP"
         },
         {
             "name": "KerbinSideRemasteredGapExtras"
+        },
+        {
+            "name": "KerbinSideRemasteredGAP"
         }
     ],
     "install": [
@@ -59,5 +58,5 @@
         }
     ],
     "download": "https://spacedock.info/mod/2808/Kerbin%20Side%20Remastered%20-%20The%20Life%20Aquatic/download/v2.0.1",
-    "download_content_type": "application/zip",
+    "download_content_type": "application/zip"
 }
