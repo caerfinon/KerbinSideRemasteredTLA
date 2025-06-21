@@ -11,12 +11,12 @@ Requires
 
 Recommends:
 - Recommends: Working Underwater Lite
-- Recommends: KSC Harbor
 - Recommends: SunkWorks Maritime Technologies (Required for Salvage missions)
 
 Suggests:
 - Suggests: Kerbin Side Remastered GAP
-- Suggests: Kerbin Side Remastered Gap Extras 
+- Suggests: Kerbin Side Remastered Gap Extras
+- Suggests: KSC Harbor 
 
 
 
